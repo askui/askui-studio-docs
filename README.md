@@ -45,7 +45,7 @@ Do the following to install _Vale_ and the AskUI style guide.
 * Symlink the styles to your `.github` folder
 
 ```bash
-ln -s <Path to cloned askui-vale-repository>/.github/styles styles  
+ln -s <Path to cloned askui-vale-repository>/styles .github/styles  
 ```
 
 To run _Vale_ manually before committing:
@@ -54,35 +54,6 @@ To run _Vale_ manually before committing:
 # Switch to root directory first
 vale docs
 ```
-
-### Create a New Release Notes Entry
-
-The blog is stored under `docs/blog`. Every entry gets its own folder and we use the following format as a naming convention `YYYY-MM-DD`. This makes sorting easier. Inside the folder you can store images and _maximal_ one Markdown file (`.md` file extension). The Markdown file contains your **Release Note** entry.
-
-#### Anatomy of a Release Note File
-
-Every **Release Note** has a metadata header which looks like this.
-Choose a unique title and slug.
-
-```yaml
----
-title: 2023.12.13 Annotate DetectedElements from get()
-slug: release-notes-annotate-detected-elements
-authors: [leonmeier, johannesdienst]
-tags: [ReleaseNotes]
-hide_table_of_contents: false
----
-```
-
-#### Add an Author
-
-If you want to add a new author follow the convention in `authors.yml`. The author-image has to be added to `docs/static/img`.
-
-### Regenerate API Documentation
-
-1. Head over to [askui-inference](https://github.com/askui/askui-inference#generate-fluent-api-and-documentation)
-2. Copy over the generated documentation
-3. Adjust API documentation wherever we override it in `UiControlClient`
 
 ## Contributing
 
@@ -93,10 +64,6 @@ Your branch name should conform to the format `<issue id>-<issue title lower-cas
 ### Commit Message Standard
 
 Commit messages should conform to [Conventional Commits Message Standard](https://www.conventionalcommits.org/en/v1.0.0/). Exceptions to this rule may be merge commits.
-
-### Adding Dependencies
-
-The [one version rule](https://opensource.google/documentation/reference/thirdparty/oneversion#:~:text=There%20may%20only%20be%20one,several%20reasons%20for%20this%20restriction.) should be followed as much as possible. In practice, this mean checking if a dependency to be added is already used by another package or meant to be used by multiple packages. If not, install it inside the corresponding package's root directory. If it is shared, install it in the project's root directory and make sure that you only need to depend on this single version in all packages. 
 
 ### Githooks
 
