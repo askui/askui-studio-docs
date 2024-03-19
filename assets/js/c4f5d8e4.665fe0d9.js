@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdocs=self.webpackChunkdocs||[]).push([[632],{3712:(s,e,u)=>{u.r(e),u.d(e,{default:()=>t});u(1504);var c=u(5592),o=u(7624);function t(){return(0,o.jsx)(c.YJ,{to:"/docs/askui-studio/overview"})}}}]);
