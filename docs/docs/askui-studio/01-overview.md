@@ -9,3 +9,7 @@ custom_edit_url: null
 
 We are on a mission to liberate companies from repetitive work by simulating human input with artificial intelligence.
 With AskUI you can visually automate apps without any knowledge of the logical structure behind it.
+
+<video controls>
+  <source src="https://files.askui.com/assets/docs/AskUI-Studio-Onboarding-Educational.mp4"/>
+</video>
